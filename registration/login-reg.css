@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Times, serif;
+}
+body {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: animate 15s ease-in-out infinite;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/*********Header*********/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /**position: fixed;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(90deg, #1E1C1E 10%, #2A282C 50%);
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 5;
+    position: fixed;
+}
+.links{
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-right: 11rem;
+    z-index: 1;
+}
+.links a.active {
+    color: #fff;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.links a:hover {
+    color: white;
+    border-radius: 4px;
+    text-decoration: underline;
+    
+}
+.links li{
+    font-size: 1.5rem;
+    margin-right: 4rem;
+    font-weight: 400;
+    list-style: none;
+}
+.logo-image{
+    margin-left: 4rem;
+    border-radius: 50px;
+    padding: 1rem;
+}
+.logo-image1{
+    margin-left: 4rem;
+    padding: 1rem;
+}
+
+
+@keyframes animate{
+    0%, 100%{
+        background-image: url("../img/bg_1.jpg");
+    }
+    50%{
+        background-image: url("../img/bg_2.jpg");
+    }
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 7.5rem;
+}
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    max-width: 400px; /* Adjust as needed */
+}
+.box h2{
+    text-align: center;
+}
+.formbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.input {
+    margin-bottom: 5px;
+}
+
+.input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 3px solid;
+    border-color: #ffffff;
+    margin-top: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: black;
+    border-radius: 5px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #007bff; /* Blue link color */
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
